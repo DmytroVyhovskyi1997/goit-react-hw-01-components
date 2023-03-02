@@ -9,6 +9,9 @@ import user from './components/profile/user.json';
 import { Statistics } from 'components/statics/Statistics';
 import data from './components/statics/data.json';
 
+import { FriendList } from 'components/friendList/FriendList';
+import friends from 'components/friendList/friends.json';
+
 // import data from '/path/to/data.json';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -23,6 +26,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       />
       <Statistics title="Upload stats" stats={data} />
 <Statistics stats={data} />
+<FriendList friends={friends} />;
       </App> 
   </React.StrictMode>
 );
