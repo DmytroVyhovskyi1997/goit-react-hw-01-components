@@ -1,0 +1,27 @@
+.item{
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 35%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    margin-top: 15px;
+    width: 100%;
+}
+.status {
+    border-radius: 50%;
+    margin: auto 30px;
+    height: 15px;
+    width: 15px;
+  }
+.online{
+    composes: status;
+    background-color: green;
+}
+
+.offline {
+    composes: status;
+    background-color: red;
+}
+.avatar{
+    margin: auto;
+}

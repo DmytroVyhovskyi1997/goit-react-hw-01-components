@@ -1,0 +1,24 @@
+.key{
+    color: #8a8b8e;
+    font-size: 24px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.key:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+.value{
+    background-color: #02bbd7;
+    color: #fff;
+    font-size: 24px;
+    padding: 20px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 30%;
+}
+.transaction{
+    box-shadow: 0 5px 15px rgb(0 0 0 / 35%);
+}
+
