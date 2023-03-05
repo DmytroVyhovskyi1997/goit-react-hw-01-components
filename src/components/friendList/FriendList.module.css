@@ -6,6 +6,7 @@
     grid-template-columns: 1fr 1fr 3fr;
     margin-top: 15px;
     width: 100%;
+   padding: 10px;
 }
 .status {
     border-radius: 50%;
@@ -24,4 +25,16 @@
 }
 .avatar{
     margin: auto;
+}
+
+.friendList{
+    margin: auto;
+    margin: auto;
+    padding: 0;
+    width: 50%;
+}
+.name{
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 20px;
 }

@@ -4,12 +4,12 @@ import css from './FriendList.module.css';
 
 export const FriendList = ({ friends }) => (
     <ul className={css.friendList}>
-      {friends.map(friend => (
+      {friends.map(({id,avatar,isOnline,name}) => (
         <FriendListItem
-          key={friend.id}
-          avatar={friend.avatar}
-          isOnline={friend.isOnline}
-          name={friend.name}
+          key={id}
+          avatar={avatar}
+          isOnline={isOnline}
+          name={name}
         ></FriendListItem>
       ))}
     </ul>
@@ -17,11 +17,11 @@ export const FriendList = ({ friends }) => (
 
   FriendList.propTypes = {
     friends: PropTypes.arrayOf(
-      PropTypes.exact({
+      PropTypes.shape({
         id: PropTypes.number.isRequired,
         avatar: PropTypes.string.isRequired,
         name: PropTypes.string.isRequired,
         isOnline: PropTypes.bool.isRequired,
-      })
+      }.isRequired)
     ).isRequired,
   };

@@ -74,3 +74,6 @@ border-left: 1px solid #d3d5e3;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 10px;
 }
+.description{
+  padding: 20px;
+}
